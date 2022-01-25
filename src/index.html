@@ -12,6 +12,31 @@
   <header id="header">
     <h1 class="main-title">Leaderboard</h1>
   </header>
+  <main id="main">
+    <section class="recent-scores-list">
+      <div class="score-list-header">
+        <h2 class="section-title">Recent Scores</h2>
+        <button class="btn btn-refresh">Refresh</button>
+      </div>
+      <ul class="recent-scores-container">
+        <li class="score">Name: 100</li>
+        <li class="score">Name: 20</li>
+        <li class="score">Name: 50</li>
+        <li class="score">Name: 78</li>
+        <li class="score">Name: 125</li>
+        <li class="score">Name: 77</li>
+        <li class="score">Name: 42</li>
+      </ul>
+    </section>
+    <section class="add-score">
+      <h2 class="section-title">Add you score</h2>
+      <form action="" id="add-score">
+        <input type="text" name="name" id="name" placeholder="your name..." required>
+        <input type="number" name="score" id="score" placeholder="your score..." required>
+        <input type="submit" value="Submit" class="btn btn-submit">
+      </form>
+    </section>
+  </main>
 </body>
 
 </html>
