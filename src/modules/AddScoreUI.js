@@ -10,8 +10,6 @@ const renderFormAddScore = () => {
           <input type="submit" value="Submit" class="btn btn-submit">
         </form>`;
   mainSection.appendChild(addScoreSection);
-}
+};
 
 export default renderFormAddScore;
-
-
