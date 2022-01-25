@@ -10,6 +10,24 @@ class Scores {
         console.error('Error:', error);
       });
   }
+
+  static async addScore({ user, score }) {
+    const newScore = { user, score };
+
+    await fetch(`${BASE_URL}/${gameId}/scores/`,
+      {
+        method: 'POST',
+        headers: {
+          'Content-type': 'application/json; charset=UTF-8',
+        },
+        body: JSON.stringify(newScore),
+      })
+      .then((response) => response.json())
+      .then((data) => data)
+      .catch((error) => {
+        console.error('Error:', error);
+      });
+  }
 }
 
 export default Scores;
