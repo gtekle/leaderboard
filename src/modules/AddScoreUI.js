@@ -1,3 +1,6 @@
+import renderScore from "./ScoreUI.js";
+import Scores from "./Scores.js";
+
 const renderFormAddScore = () => {
   const mainSection = document.getElementById('main');
   const addScoreSection = document.createElement('section');
@@ -10,6 +13,8 @@ const renderFormAddScore = () => {
           <input type="submit" value="Submit" class="btn btn-submit">
         </form>`;
   mainSection.appendChild(addScoreSection);
+
+  onFormSubmit();
 };
 
 export default renderFormAddScore;
