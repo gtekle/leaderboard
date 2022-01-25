@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  padding: 0 6px;
+  line-height: 24px;
+}
+
+.btn {
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.section-title {
+  margin: 0;
+}
+
+#header {
+  padding: 18px 40px;
+}
+
+#main {
+  display: flex;
+  justify-content: space-around;
+  padding: 18px 120px;
+}
+
+.recent-scores-list {
+  width: 50%;
+}
+
+.score-list-header {
+  display: flex;
+  align-items: center;
+}
+
+.score-list-header .section-title {
+  flex: 4;
+}
+
+.score-list-header .btn-refresh {
+  flex: 1;
+}
+
+.recent-scores-container {
+  border: 2px solid black;
+  margin-top: 10px;
+}
+
+.recent-scores-container li {
+  margin: 5px 0;
+}
+
+.score:nth-child(even) {
+  background-color: rgb(235, 235, 235);
+}
+
+.add-score {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+}
+
+#form-add-score {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+#form-add-score > * {
+  margin: 5px 0;
+}
+
+.btn-submit {
+  align-self: flex-end;
+}
+
+@media screen and (max-width: 768px) {
+
+  #header {
+    padding: 0;
+    text-align: center;
+  }
+
+  #main {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 6px;
+    align-items: center;
+  }
+
+  .recent-scores-list {
+    width: 100%;
+    margin-top: 24px;
+    order: 1;
+  }
+
+  .add-score {
+    width: 100%;
+  }
+}
