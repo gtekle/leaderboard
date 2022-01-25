@@ -2,13 +2,11 @@ const gameId = 'OYxzLGROB4qVtRjyvig5';
 const BASE_URL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games';
 
 class Scores {
-  static getScores() {
-    return this.recentScores = fetch(`${BASE_URL}/${gameId}/scores/`)
-      .then(response => response.json())
-      .then(data => data.result)
-      .catch((error) => {
-        console.error('Error:', error);
-      });
+  static async getScores() {
+    return fetch(`${BASE_URL}/${gameId}/scores/`)
+      .then((response) => response.json())
+      .then((data) => data.result)
+      .catch((error) => error);
   }
 
   static async addScore({ user, score }) {
@@ -24,9 +22,7 @@ class Scores {
       })
       .then((response) => response.json())
       .then((data) => data)
-      .catch((error) => {
-        console.error('Error:', error);
-      });
+      .catch((error) => error);
   }
 }
 

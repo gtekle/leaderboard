@@ -1,5 +1,5 @@
-import renderScore from "./ScoreUI.js";
-import Scores from "./Scores.js";
+import renderScore from './ScoreUI.js';
+import Scores from './Scores.js';
 
 const onFormSubmit = () => {
   const addScoreForm = document.querySelector('#form-add-score');
@@ -12,8 +12,8 @@ const onFormSubmit = () => {
     await Scores.addScore({ user: name.value, score: Number(score.value, 10) });
 
     renderScore();
-  })
-}
+  });
+};
 
 const renderFormAddScore = () => {
   const mainSection = document.getElementById('main');
