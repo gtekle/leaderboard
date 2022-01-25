@@ -1,6 +1,13 @@
 import Scores from "./Scores";
 
 const recentScoresContainer = document.querySelector('.recent-scores-container');
+const btnRefresh = document.querySelector('.btn-refresh');
+
+btnRefresh.addEventListener('click', () => {
+  console.log("refresh clicked")
+  Scores.getScores();
+  renderScore();
+});
 
 const renderScore = async () => {
   const recentScores = await Scores.getScores()
@@ -10,7 +17,7 @@ const renderScore = async () => {
   recentScores.forEach(({ user, score }) => {
     const scoreItem = document.createElement('li');
     scoreItem.classList.add('score');
-    scoreItem.textContent = `${user} ${score}`;
+    scoreItem.innerHTML = `<span>${user}</span><span>${score}</span>`
     recentScoresContainer.appendChild(scoreItem);
   });
 };
