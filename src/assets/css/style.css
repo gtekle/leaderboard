@@ -6,6 +6,8 @@
 
 body {
   font-size: 16px;
+  background-image: url('../img/pattern-background.jpg');
+  background-size: cover;
 }
 
 ul {

@@ -5,7 +5,7 @@ class Scores {
   static async getScores() {
     return fetch(`${BASE_URL}/${gameId}/scores/`)
       .then((response) => response.json())
-      .then((data) => data.result.sort((a, b) => b.score - a.score))
+      .then((data) => data.result.sort((playerOne, playerTwo) => playerTwo.score - playerOne.score))
       .catch((error) => error);
   }
 
