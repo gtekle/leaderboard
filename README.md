@@ -4,13 +4,22 @@
 
 The leaderboard website displays scores submitted by different players. It also allows players to submit their own score. All data is preserved online, thanks to the [Leaderboard API service](https://www.notion.so/microverse/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3).
 
+### Desktop Version
+
+![Desktop - Books List Page](./assets/img/leaderboard-desktop-version-snapshot.png)
+
+### Mobile Version
+
+![Mobile - Books List Page](./assets/img/leaderboard-mobile-version-snapshot.png)
+
 ## Built With
 
 - HTML, CSS and JavaScript (ES6)
 
 ## Live Demo
 
-- Live Demo link will be provided soon.
+- [Live Demo Link](https://leaderboard-tek.netlify.app/)
+- NB: The current updates will be deployed when the 'styling-teh-app' branch is merged to 'develop' branch.
 
 ## Getting Started
 
