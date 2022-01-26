@@ -24,10 +24,22 @@ li {
 .btn {
   border: 2px solid black;
   cursor: pointer;
+  background-color: purple;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 5px;
+   font-size: 20px;
+  line-height: 24px;
+}
+
+.btn:hover {
+  background-color: rgb(70, 5, 70);
 }
 
 .section-title {
   margin: 0;
+  color: #fff;
+  text-transform: uppercase;
 }
 
 #header {
@@ -50,7 +62,7 @@ li {
 .score-list-header {
   display: flex;
   align-items: center;
-  padding: 16px;
+  padding: 20px;
   color: #fff;
 }
 
@@ -64,8 +76,8 @@ li {
 
 .recent-scores-container {
   border: 3px solid #fff;
-  margin-top: 10px;
   border-radius: 10px;
+  margin-top: 10px;
 }
 
 .score {
@@ -84,6 +96,10 @@ li {
   width: 35%;
   display: flex;
   flex-direction: column;
+  align-self: flex-start;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 16px;
 }
 
 #form-add-score {
@@ -94,9 +110,15 @@ li {
 
 #form-add-score > * {
   margin: 5px 0;
+  border-radius: 5px;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 .btn-submit {
+  background-color: purple;
+  border: 1px solid #fff;
+  color: #fff;
   align-self: flex-end;
 }
 
