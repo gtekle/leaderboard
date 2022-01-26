@@ -42,11 +42,16 @@ li {
 
 .recent-scores-list {
   width: 50%;
+  background-image: url('../img/leaderboard-bg-image.jpg');
+  background-size: cover;
+  border-radius: 10px;
 }
 
 .score-list-header {
   display: flex;
   align-items: center;
+  padding: 16px;
+  color: #fff;
 }
 
 .score-list-header .section-title {
@@ -58,19 +63,21 @@ li {
 }
 
 .recent-scores-container {
-  border: 2px solid black;
+  border: 3px solid #fff;
   margin-top: 10px;
+  border-radius: 10px;
 }
 
 .score {
   display: flex;
   justify-content: space-between;
   padding: 5px 10px;
-  font-weight: 500;
+  font-weight: 600;
+  color: rgb(238, 207, 207);
 }
 
 .score:nth-child(even) {
-  background-color: rgb(235, 235, 235);
+  background-color: rgba(235, 235, 235, 0.25);
 }
 
 .add-score {
