@@ -6,11 +6,11 @@ The leaderboard website displays scores submitted by different players. It also 
 
 ### Desktop Version
 
-![Desktop - Books List Page](./assets/img/leaderboard-desktop-version-snapshot.png)
+![Desktop - Books List Page](./src/assets/img/leaderboard-desktop-version-snapshot.png)
 
 ### Mobile Version
 
-![Mobile - Books List Page](./assets/img/leaderboard-mobile-version-snapshot.png)
+![Mobile - Books List Page](./src/assets/img/leaderboard-mobile-version-snapshot.png)
 
 ## Built With
 
