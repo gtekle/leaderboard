@@ -95,9 +95,25 @@ li {
 .score {
   display: flex;
   justify-content: space-between;
-  padding: 5px 10px;
+  padding: 5px 16px;
   font-weight: 600;
   color: rgb(238, 207, 207);
+}
+
+.score .rank-and-name {
+  width: 75%;
+  display: flex;
+}
+
+.score .rank-and-name > *:first-child {
+  margin-right: 16px;
+  align-self: flex-end;
+  min-width: 30px;
+  text-align: center;
+}
+
+.score .rank-and-name > *:last-child {
+  text-transform: capitalize;
 }
 
 .score:nth-child(even) {

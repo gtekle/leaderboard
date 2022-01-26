@@ -11,7 +11,7 @@ const renderScore = async () => {
   recentScores.forEach(({ user, score }, index) => {
     const scoreItem = document.createElement('li');
     scoreItem.classList.add('score');
-    scoreItem.innerHTML = `<div><span>${index + 1}    </span><span>${user}</span></div><span>${score}</span>`;
+    scoreItem.innerHTML = `<div class='rank-and-name'><span>${index + 1}.</span><span>${user}</span></div><span>${score}</span>`;
     recentScoresContainer.appendChild(scoreItem);
   });
 };
