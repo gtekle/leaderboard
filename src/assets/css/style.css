@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Press+Start+2P&display=swap');
+
 *,
 *::before,
 *::after {
@@ -46,6 +48,13 @@ li {
   padding: 18px 40px;
 }
 
+.main-title {
+  font-family: 'Press Start 2P', cursive;
+  font-weight: 700;
+  color: #fff;
+  font-size: 42px;
+}
+
 #main {
   display: flex;
   justify-content: space-around;
@@ -64,6 +73,9 @@ li {
   align-items: center;
   padding: 20px;
   color: #fff;
+  border: 3px solid #fff;
+  /* border-radius: 10px; */
+  border-radius: 10px 10px 0 0;
 }
 
 .score-list-header .section-title {
@@ -76,8 +88,8 @@ li {
 
 .recent-scores-container {
   border: 3px solid #fff;
-  border-radius: 10px;
-  margin-top: 10px;
+  border-radius: 0 0 10px 10px;
+  margin-top: 16px;
 }
 
 .score {
