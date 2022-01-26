@@ -10,6 +10,8 @@ const onFormSubmit = () => {
     const { name, score } = addScoreForm.elements;
 
     await Scores.addScore({ user: name.value, score: Number(score.value, 10) });
+    event.target.reset();
+    name.focus();
 
     renderScore();
   });
