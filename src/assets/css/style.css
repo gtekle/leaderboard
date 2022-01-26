@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Press+Start+2P&display=swap');
+
 *,
 *::before,
 *::after {
@@ -6,6 +8,8 @@
 
 body {
   font-size: 16px;
+  background-image: url('../img/pattern-background.jpg');
+  background-size: cover;
 }
 
 ul {
@@ -20,16 +24,34 @@ li {
 }
 
 .btn {
-  border: 2px solid black;
   cursor: pointer;
+  background-color: purple;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.btn:hover {
+  background-color: rgb(70, 5, 70);
 }
 
 .section-title {
   margin: 0;
+  color: #fff;
+  text-transform: uppercase;
 }
 
 #header {
   padding: 18px 40px;
+}
+
+.main-title {
+  font-family: 'Press Start 2P', cursive;
+  font-weight: 700;
+  color: #fff;
+  font-size: 42px;
 }
 
 #main {
@@ -40,11 +62,18 @@ li {
 
 .recent-scores-list {
   width: 50%;
+  background-image: url('../img/leaderboard-bg-image.jpg');
+  background-size: cover;
+  border-radius: 10px;
 }
 
 .score-list-header {
   display: flex;
   align-items: center;
+  padding: 20px;
+  color: #fff;
+  border: 3px solid #fff;
+  border-radius: 10px 10px 0 0;
 }
 
 .score-list-header .section-title {
@@ -56,25 +85,47 @@ li {
 }
 
 .recent-scores-container {
-  border: 2px solid black;
-  margin-top: 10px;
+  border: 3px solid #fff;
+  border-radius: 0 0 10px 10px;
+  margin-top: 16px;
 }
 
 .score {
   display: flex;
   justify-content: space-between;
-  padding: 5px 10px;
-  font-weight: 500;
+  padding: 5px 16px;
+  font-weight: 600;
+  color: rgb(238, 207, 207);
+}
+
+.score .rank-and-name {
+  width: 75%;
+  display: flex;
+}
+
+.score .rank-and-name > *:first-child {
+  margin-right: 16px;
+  align-self: flex-end;
+  min-width: 30px;
+  text-align: center;
+}
+
+.score .rank-and-name > *:last-child {
+  text-transform: capitalize;
 }
 
 .score:nth-child(even) {
-  background-color: rgb(235, 235, 235);
+  background-color: rgba(235, 235, 235, 0.25);
 }
 
 .add-score {
   width: 35%;
   display: flex;
   flex-direction: column;
+  align-self: flex-start;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 16px;
 }
 
 #form-add-score {
@@ -85,6 +136,9 @@ li {
 
 #form-add-score > * {
   margin: 5px 0;
+  border-radius: 5px;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .btn-submit {
@@ -92,9 +146,20 @@ li {
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    padding: 0;
+    max-width: 98%;
+    margin: 10px auto;
+  }
+
   #header {
     padding: 0;
     text-align: center;
+  }
+
+  .main-title {
+    font-size: 28px;
+    padding: 10px 0;
   }
 
   #main {
@@ -102,6 +167,7 @@ li {
     justify-content: space-between;
     padding: 6px;
     align-items: center;
+    width: 100%;
   }
 
   .recent-scores-list {
