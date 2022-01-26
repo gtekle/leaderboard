@@ -60,8 +60,11 @@ li {
   margin-top: 10px;
 }
 
-.recent-scores-container li {
-  margin: 5px 0;
+.score {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+  font-weight: 500;
 }
 
 .score:nth-child(even) {
