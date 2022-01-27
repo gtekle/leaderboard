@@ -19,7 +19,6 @@ The leaderboard website displays scores submitted by different players. It also 
 ## Live Demo
 
 - [Live Demo Link](https://leaderboard-tek.netlify.app/)
-- NB: The current updates will be deployed when the 'styling-teh-app' branch is merged to 'develop' branch.
 
 ## Getting Started
 

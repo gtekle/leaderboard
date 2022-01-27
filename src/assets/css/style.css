@@ -145,6 +145,15 @@ li {
   align-self: flex-end;
 }
 
+.input-errors {
+  color: #dc3545;
+  background-color: #fff;
+  display: none;
+  font-size: 12px;
+  margin-top: 12px;
+  align-self: flex-start;
+}
+
 @media screen and (max-width: 768px) {
   body {
     padding: 0;
